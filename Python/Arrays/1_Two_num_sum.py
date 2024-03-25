@@ -26,4 +26,4 @@ def twoNumSum(array, targetSumNum):
     return []
 
 
-twoNumSum(arrOfInt, target)
+print(twoNumSum(arrOfInt, target))

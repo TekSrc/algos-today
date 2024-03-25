@@ -40,3 +40,30 @@ export function twoNumSum(array: number[], targetSumNum: number) {
 
 const result = twoNumSum(arrayOfInts, target);
 console.log("result: ", result); // [11, -1]
+
+/* Slightly different sum of two values challenge in JS.
+ * Given an array of integers and a value, determine if there are any two integers in the array whose sum is euqal to the given value. Return true if the sum exists and return false if it does not.
+ * USING hashing and comparison between elements for space and time O(n) alternative in JS
+ */
+
+// let findSumOfTwo = (arr, val) => {
+//   let foundValues = new Set();
+
+//   for (let item in arr) {
+//     if (foundValues.has(val - arr[item])) {
+//       return true;
+//     }
+
+//     foundValues.add(arr[item]);
+//   }
+
+//   return false;
+// };
+
+// let v = [5, 7, 1, 2, 8, 4, 3];
+// let test = [3, 20, 1, 2, 7];
+
+// for (let i = 0; i < test.length; i++) {
+//   let output = findSumOfTwo(v, test[i]);
+//   console.log(`findSumOfTwo(v, ${test[i]} ) = ${output}`);
+// }
