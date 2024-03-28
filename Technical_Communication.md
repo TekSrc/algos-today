@@ -14,3 +14,11 @@
 4. Tournament Winner
 
 - Never ties, always one winner. Competitions array represents all teams with pairs, differentiating between home and away to help determine winner Home as first item in pair, away as second item in pair. Results array will have indices that correspond with the competitions array. 0 means team away team won, 1 means home team won. Points must be tracked as well as any win gets 3 points to that team. Then return team with the most points. Pretty straight forward. Data structure for what team has what points, making a hash table of scores with key being the team name and their points, though initialized initially empty. Looping through competitions and results arrays at the same time. Start with competitions index, look at results index, determine who won and what score, then update scores data structure. If in the scores structure add to points, if not, that means they have not won yet, set them in with score 0. Move forward in next competitions index check results by matching index, then review scores hash table and add or update points. Finally after the finished traversal of competitions and looking at all results, I need to determine which has most points, aka loop through scores for which has the most points and return that team name. Going to only loop through the competitions array and keep track of the winning team in a variable. And compare the score just added to the hash table of that team with the variable that starts, and we update best team as we move our pointer after the computation.
+
+5. Non-Constructible Change
+
+-
+
+6. Tranpose Matrix
+
+-
